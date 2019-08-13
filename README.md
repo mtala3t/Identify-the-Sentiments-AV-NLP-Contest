@@ -1,6 +1,6 @@
 # Identify the Sentiments - Analytics Vidhya Contest
 
-This project is submitted as python implementation in the contest of Analtics Vidhya called "Identify the Sentiments". I enjoyed the joining of this competition and all its process. This submited solution got the rank <b>160</b> in the public leaderboard.
+This project is submitted as python implementation in the contest of Analytics Vidhya called "Identify the Sentiments". I enjoyed the joining of this competition and all its process. This submited solution got the rank <b>160</b> in the public leaderboard.
 
 
 # Problem Statement
