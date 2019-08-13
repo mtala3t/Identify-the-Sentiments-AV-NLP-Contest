@@ -1,12 +1,12 @@
-# Identify the Sentiments - Analytics Vidhya Competition
+# Identify the Sentiments - Analytics Vidhya Contest
 
-This project is submitted as an implementation solution in the competition of Analtics Vidhya called "Identify the Sentiments". I enjoyed the joining of this competition and all its process. This submited solution got the rank 160 in the public leaderboard.
+This project is submitted as an implementation solution in the contest of Analtics Vidhya called "Identify the Sentiments". I enjoyed the joining of this competition and all its process. This submited solution got the rank 160 in the public leaderboard.
 
 
 # Problem Statement
 Sentiment analysis remains one of the key problems that has seen extensive application of natural language processing. This time around, given the tweets from customers about various tech firms who manufacture and sell mobiles, computers, laptops, etc, the task is to identify if the tweets have a negative sentiment towards such companies or products.
 
-# Approach Taken
+# Implementation Approach
 
 ## Dataset
 
@@ -24,11 +24,23 @@ We applied the below text preposessing on the training and testing tweets sets:
 - Text normalization by reducing the words to its base form.
 
 
-## Constructing ElMo Vectors
+## Text to ElMo Vectors
 
 We imported and used the pretrained ELMo model from the Tensorflow Hub, where we extracted ELMo vectors for the cleaned tweets in the train and test datasets. Each tweet is represented by an ELMo vector of length 1024 interms of the tweet's words/tokens.
 
-## Classifiaction Model Building
+## Classifiaction Model Building and Evaluation
+
+We have used the ELMo vectors as features of the train dataset to build and train a classification model. We evaluated our model by the F1 score metric since this is the official evaluation metric of the contest. We trained different classifications model as follows:
+
+- Multi-layer Perceptron (MLP) Nueral Network Model, the evaluation score for this MLP model is: 
+- Support vector machine model, the evaluation score for this SVM model is:
+- Simple Logistic Regression model, the evaluation score for this LR model is:
+
+
+## Future Work
+
+- Use another classification models
+- Use the word2vec vectors combined with the ELMo vectors as features.
 
 
 
