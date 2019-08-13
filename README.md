@@ -12,3 +12,24 @@ Sentiment analysis remains one of the key problems that has seen extensive appli
 
 - The train set contains 7,920 tweets
 - The test set contains 1,953 tweets
+
+## Text Cleaning and Preprocessing 
+We applied the below text preposessing on the training and testing tweets sets:
+
+- URLs removal: We have used Regular Expressions (or RegEx) to remove the URLs.
+- Punctuation marks removal: remove any punction marks from the text.
+- Numbers removal: replace any digits in the tweets with space.
+- Whitespaces removal
+- Convert the text to lowercase.
+- Text normalization by reducing the words to its base form.
+
+
+## Constructing ElMo Vectors
+
+We imported and used the pretrained ELMo model from the Tensorflow Hub, where we extracted ELMo vectors for the cleaned tweets in the train and test datasets. Each tweet is represented by an ELMo vector of length 1024 interms of the tweet's words/tokens.
+
+## Classifiaction Model Building
+
+
+
+
