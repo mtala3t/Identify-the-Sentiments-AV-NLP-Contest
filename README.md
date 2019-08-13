@@ -1,6 +1,6 @@
 # Identify the Sentiments - Analytics Vidhya Contest
 
-This project is submitted as an implementation solution in the contest of Analtics Vidhya called "Identify the Sentiments". I enjoyed the joining of this competition and all its process. This submited solution got the rank 160 in the public leaderboard.
+This project is submitted as an implementation solution in the contest of Analtics Vidhya called "Identify the Sentiments". I enjoyed the joining of this competition and all its process. This submited solution got the rank <b>160</b> in the public leaderboard.
 
 
 # Problem Statement
@@ -33,14 +33,14 @@ We imported and used the pretrained ELMo model from the Tensorflow Hub, where we
 We have used the ELMo vectors as features of the train dataset to build and train a classification model. We evaluated our model by the F1 score metric since this is the official evaluation metric of the contest. We trained different classifications model as follows:
 
 - Multi-layer Perceptron (MLP) Nueral Network Model, the evaluation score for this MLP model is: <b>0.8031674208144797</b>
-- Support vector machine model, the evaluation score for this SVM model is: 0.7972508591065293
-- Simple Logistic Regression model, the evaluation score for this LR model is: 0.7761904761904763
+- Support vector machine model, the evaluation score for this SVM model is: <b>0.7972508591065293</b>
+- Simple Logistic Regression model, the evaluation score for this LR model is: <b>0.7761904761904763</b>
 
 
 ## Future Work
 
-- Use another classification models
-- Use the word2vec vectors combined with the ELMo vectors as features.
+- Try another classification models
+- Try to use the word2vec vectors combined with the ELMo vectors as features.
 
 
 
