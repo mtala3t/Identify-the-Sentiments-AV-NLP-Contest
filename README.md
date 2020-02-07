@@ -25,25 +25,27 @@ We applied the below text preposessing on the training and testing tweets sets:
 - Text normalization by reducing the words to its base form by using the <b>spacy</b> library.
 
 
-## Text to ElMo Vectors
+## Tweets to ElMo Vectors
 
 We imported and used the pretrained ELMo model from the Tensorflow Hub, where we extracted ELMo vectors for the cleaned tweets in the train and test datasets. Each tweet is represented by an ELMo vector of length 1024 interms of the tweet's words/tokens.
 
 
-## Text to BERT Vectors
+## Tweets to BERT Vectors
 
-We imported and used the pretrained google BERT model, where we extracted PERT vectors for the cleaned tweets in the train and test datasets. Each tweet is represented by an BERT vector of length 768 interms of the tweet's words/tokens.
+We imported and used the pretrained google BERT model, where we extracted BERT vectors for the cleaned tweets in the train and test datasets. Each tweet is represented by an BERT vector of length 768 interms of the tweet's words/tokens.
 
 
 ## Classifiaction Model Building and Evaluation
 
 We have used the ELMo vectors and BERT vecyors as features of the train dataset to build and train a classification model. We evaluated our model by the F1 score metric since this is the official evaluation metric of the contest. We trained different classifications model as follows:
 
- - <u>BERT and ELMo verctors with Support vector machine model, the evaluation score for this SVM model is: <b>0.8899268298</b></u>
+ - <b>BERT and ELMo verctors with Support vector machine model, the evaluation score for this SVM model is: <b>0.8899268298</b></b>
+
 
 - ELMo vectors with Multi-layer Perceptron (MLP) Nueral Network Model, the evaluation score for this MLP model is: <b>0.881236842720449</b>
 - ELMo vectors with Support vector machine model, the evaluation score for this SVM model is: <b>0.881868025014501</b>
 - ELMo vectors with Simple Logistic Regression model, the evaluation score for this LR model is: <b>0.7761904761904763</b>
+
 
 - BERT vectors with Multi-layer Perceptron (MLP) Nueral Network Model, the evaluation score for this MLP model is: <b>0.6096144315591238</b>
 - BERT vectors with Support vector machine model, the evaluation score for this SVM model is: <b>0.8851479845833099</b>
