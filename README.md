@@ -1,6 +1,6 @@
 # Identify the Sentiments - Analytics Vidhya Contest
 
-This project is submitted as python implementation in the contest of Analytics Vidhya called "Identify the Sentiments". I enjoyed the joining of this competition and all its process. This submited solution got the rank <b>160</b> in the public leaderboard.
+This project is submitted as python implementation in the contest of Analytics Vidhya called "Identify the Sentiments". I enjoyed the joining of this competition and all its process. This submited solution got the rank <b>147</b> in the public leaderboard.
 
 The contest URL: https://datahack.analyticsvidhya.com/contest/linguipedia-codefest-natural-language-processing-1/
 
@@ -29,13 +29,25 @@ We applied the below text preposessing on the training and testing tweets sets:
 
 We imported and used the pretrained ELMo model from the Tensorflow Hub, where we extracted ELMo vectors for the cleaned tweets in the train and test datasets. Each tweet is represented by an ELMo vector of length 1024 interms of the tweet's words/tokens.
 
+
+## Text to BERT Vectors
+
+We imported and used the pretrained google BERT model, where we extracted PERT vectors for the cleaned tweets in the train and test datasets. Each tweet is represented by an BERT vector of length 768 interms of the tweet's words/tokens.
+
+
 ## Classifiaction Model Building and Evaluation
 
-We have used the ELMo vectors as features of the train dataset to build and train a classification model. We evaluated our model by the F1 score metric since this is the official evaluation metric of the contest. We trained different classifications model as follows:
+We have used the ELMo vectors and BERT vecyors as features of the train dataset to build and train a classification model. We evaluated our model by the F1 score metric since this is the official evaluation metric of the contest. We trained different classifications model as follows:
 
-- Multi-layer Perceptron (MLP) Nueral Network Model, the evaluation score for this MLP model is: <b>0.881236842720449</b>
-- Support vector machine model, the evaluation score for this SVM model is: <b>0.881868025014501</b>
-- Simple Logistic Regression model, the evaluation score for this LR model is: <b>0.7761904761904763</b>
+ - <u>BERT and ELMo verctors with Support vector machine model, the evaluation score for this SVM model is: <b>0.8899268298</b></u>
+
+- ELMo vectors with Multi-layer Perceptron (MLP) Nueral Network Model, the evaluation score for this MLP model is: <b>0.881236842720449</b>
+- ELMo vectors with Support vector machine model, the evaluation score for this SVM model is: <b>0.881868025014501</b>
+- ELMo vectors with Simple Logistic Regression model, the evaluation score for this LR model is: <b>0.7761904761904763</b>
+
+- BERT vectors with Multi-layer Perceptron (MLP) Nueral Network Model, the evaluation score for this MLP model is: <b>0.6096144315591238</b>
+- BERT vectors with Support vector machine model, the evaluation score for this SVM model is: <b>0.8851479845833099</b>
+- BERT vectors with Simple Logistic Regression model, the evaluation score for this LR model is: <b>0.8781415572832524</b>
 
 
 ## Future Work
