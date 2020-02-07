@@ -39,8 +39,7 @@ We imported and used the pretrained google BERT model, where we extracted BERT v
 
 We have used the ELMo vectors and BERT vecyors as features of the train dataset to build and train a classification model. We evaluated our model by the F1 score metric since this is the official evaluation metric of the contest. We trained different classifications model as follows:
 
- - <b>BERT and ELMo verctors with Support vector machine model, the evaluation score for this SVM model is: <b>0.8899268298</b></b>
-
+ - BERT and ELMo verctors with Support vector machine model, the evaluation score for this SVM model is: <b>0.8899268298</b>
 
 - ELMo vectors with Multi-layer Perceptron (MLP) Nueral Network Model, the evaluation score for this MLP model is: <b>0.881236842720449</b>
 - ELMo vectors with Support vector machine model, the evaluation score for this SVM model is: <b>0.881868025014501</b>
