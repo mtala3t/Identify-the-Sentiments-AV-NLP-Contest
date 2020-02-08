@@ -1,6 +1,6 @@
 # Identify the Sentiments - Analytics Vidhya Contest
 
-This project is submitted as python implementation in the contest of Analytics Vidhya called "Identify the Sentiments". I enjoyed the joining of this competition and all its process. This submited solution got the rank <b>143</b> in the public leaderboard.
+This project is submitted as python implementation in the contest of Analytics Vidhya called "Identify the Sentiments". I enjoyed the joining of this competition and all its process. This submited solution got the rank <b>118</b> in the public leaderboard.
 
 The contest URL: https://datahack.analyticsvidhya.com/contest/linguipedia-codefest-natural-language-processing-1/
 
@@ -39,10 +39,10 @@ We imported and used the pretrained google BERT model, where we extracted BERT v
 
 We have used the ELMo vectors and BERT vecyors as features of the train dataset to build and train a classification model. We evaluated our model by the F1 score metric since this is the official evaluation metric of the contest. We trained different classifications model as follows:
 
- - BERT and ELMo verctors with Support vector machine model, the evaluation score for this SVM model is: <b>0.8899268298</b>
+ - BERT and ELMo verctors with Support vector machine model, the evaluation score for this SVM model is: <b>0.8926634023</b>
 
 - ELMo vectors with Multi-layer Perceptron (MLP) Nueral Network Model, the evaluation score for this MLP model is: <b>0.881236842720449</b>
-- ELMo vectors with Support vector machine model, the evaluation score for this SVM model is: <b>0.881868025014501</b>
+- ELMo vectors with Support vector machine model, the evaluation score for this SVM model is: <b>0.883783815908335</b>
 - ELMo vectors with Simple Logistic Regression model, the evaluation score for this LR model is: <b>0.7761904761904763</b>
 
 
