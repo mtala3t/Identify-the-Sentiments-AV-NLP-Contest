@@ -1,6 +1,6 @@
 # Identify the Sentiments - Analytics Vidhya Contest
 
-This project is submitted as python implementation in the contest of Analytics Vidhya called "Identify the Sentiments". I enjoyed the joining of this competition and all its process. This submited solution got the rank <b>118</b> in the public leaderboard.
+This project is submitted as python implementation in the contest of Analytics Vidhya called "Identify the Sentiments". I enjoyed the joining of this competition and all its process. This submited solution got the rank <b>8</b> in the public leaderboard.
 
 The contest URL: https://datahack.analyticsvidhya.com/contest/linguipedia-codefest-natural-language-processing-1/
 
